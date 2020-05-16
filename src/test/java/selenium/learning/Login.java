@@ -18,12 +18,12 @@ public class Login {
         System.setProperty("webdriver.gecko.driver", "C:\\Tools\\geckodriver\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
-        Thread.sleep(15000);
+        Thread.sleep(20000);
         driver.get("https://www.google.com/");
 
 
 
-
+        System.out.println("Just to check the mybrnach file");
         System.out.println("Test Ended");
 
 
