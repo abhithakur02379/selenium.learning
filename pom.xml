@@ -10,20 +10,12 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.6.2</version>
-            <scope>test</scope>
-        </dependency>
 <!--        <dependency>-->
-<!--            <groupId>com.codeborne</groupId>-->
-<!--            <artifactId>selenide</artifactId>-->
-<!--            <version>5.11.1</version>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter-engine</artifactId>-->
+<!--            <version>5.6.2</version>-->
 <!--            <scope>test</scope>-->
 <!--        </dependency>-->
-
 
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -31,9 +23,12 @@
             <version>3.8.1</version>
         </dependency>
 
-
-
-
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+            <scope>test</scope>
+        </dependency>
 
 
     </dependencies>
