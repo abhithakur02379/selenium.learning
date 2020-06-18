@@ -4,7 +4,6 @@ import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Test;
 import testutilities.InputRead;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -14,7 +13,8 @@ public class SetUpTests {
 
 
 
-    @Test(priority = 1, description = "Test to verify application launched successfully")
+
+//    @BeforeMethod(description = "Test to verify application launched successfully")
     public void launch_ParaBank () throws InterruptedException
     {
 
@@ -22,6 +22,7 @@ public class SetUpTests {
         System.setProperty("selenide.browser", "Edge");
         Thread.sleep(1000);
         Configuration.startMaximized = true;
+        Configuration.reportsFolder = System.getProperty("user.dir") + "\\test-output";
         open(InputRead.getProperty("baseURI"));
         Thread.sleep(1000);
         if ($(By.xpath("//a[contains(text(),'ParaBank')]")).isDisplayed())
